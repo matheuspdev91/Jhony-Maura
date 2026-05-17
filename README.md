@@ -1,5 +1,6 @@
-![Banner](./assets/fotos/banner.png)
-
+<p align="center">
+  <img src="./assets/fotos/banner.png" alt="JHONY & MAURA Banner">
+</p>
 
 
 
