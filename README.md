@@ -3,7 +3,6 @@
 </p>
 
 
-
 # 🎤 JHONY & MAURA — Release Artístico
 
 Cinematic responsive landing page created for the musical duo JHONY & MAURA.
