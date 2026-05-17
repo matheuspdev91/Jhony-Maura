@@ -1,6 +1,11 @@
+![Banner](./assets/fotos/banner.png)
+
+
+
+
 # 🎤 JHONY & MAURA — Release Artístico
 
-Landing page cinematográfica desenvolvida para divulgação artística da dupla **JHONY & MAURA**.
+Cinematic responsive landing page created for the musical duo JHONY & MAURA.
 
 ---
 
