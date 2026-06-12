@@ -420,7 +420,7 @@ img {
     align-items: center;
     gap: var(--marquee-gap);
     width: max-content;
-    animation: marquee 38s linear infinite;
+    animation: marquee 5s linear infinite;
     will-change: transform;
 }
 
@@ -458,10 +458,13 @@ img {
 
 .tv-card strong {
     margin-bottom: 0.35rem;
-    font-size: clamp(1.6rem, 3vw, 3rem);
-    line-height: 0.95;
+    font-size: clamp(1.4rem, 2.5vw, 2.6rem);
+    line-height: 1.15;
     text-transform: uppercase;
     text-shadow: 0 0 24px rgba(255, 0, 0, 0.74);
+
+    display: block;
+    word-break: break-word;
 }
 
 .gallery-grid {
@@ -667,9 +670,17 @@ img {
 }
 
 @keyframes marquee {
-    to {
-        transform: translate3d(calc(-50% - (var(--marquee-gap) / 2)), 0, 0);
+    from {
+        transform: translateX(0);
     }
+
+    to {
+        transform: translateX(-1000px);
+    }
+}
+
+.marquee-track {
+    animation: marquee 30s linear infinite;
 }
 
 @supports (height: 100dvh) {
