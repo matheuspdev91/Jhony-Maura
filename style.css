@@ -123,19 +123,23 @@ img { display: block; max-width: 100%; }
 /* Layers cinematográficos – compostos, sem blur */
 .hero-layer { position: absolute; inset: 0; pointer-events: none; }
 
-.hero-vignette {
-    z-index: 1;
+.hero-vignette{
+    z-index:1;
     background:
-        linear-gradient(to bottom,
-            rgba(3,3,3,0.55) 0%,
-            rgba(3,3,3,0.08) 28%,
-            rgba(3,3,3,0.08) 55%,
-            rgba(3,3,3,0.70) 100%),
-        linear-gradient(to right,
-            rgba(3,3,3,0.10) 0%,
+        linear-gradient(
+            to bottom,
+            rgba(3,3,3,.28) 0%,
+            rgba(3,3,3,.04) 28%,
+            rgba(3,3,3,.04) 55%,
+            rgba(3,3,3,.42) 100%
+        ),
+        linear-gradient(
+            to right,
+            rgba(3,3,3,.05) 0%,
             transparent 20%,
-            rgba(3,3,3,0.60) 52%,
-            rgba(3,3,3,0.92) 100%);
+            rgba(3,3,3,.18) 55%,
+            rgba(3,3,3,.45) 100%
+        );
 }
 
 .hero-glow {
@@ -214,11 +218,22 @@ img { display: block; max-width: 100%; }
 }
 
 
-.hero-amp {
-    font-size: 0.72em;
-    opacity: 0.92;
-}
+.hero-amp{
+    display:block;
 
+    width:100%;
+
+    text-align:center;
+
+    color:var(--red);
+
+    font-size:.72em;
+    font-weight:900;
+
+    text-shadow:
+        0 0 12px rgba(255,32,32,.8),
+        0 0 30px rgba(255,32,32,.45);
+}
 .hero-subtitle {
     margin: 1.2rem 0 2rem;
     font-size: clamp(1.35rem, 2vw, 2rem);
@@ -289,7 +304,7 @@ img { display: block; max-width: 100%; }
 }
 
 .btn:hover::before {
-    opacity: 0.7;
+    opacity: 0.42;
     transform: translateX(72%) rotate(10deg);
 }
 
@@ -1056,9 +1071,15 @@ img { display: block; max-width: 100%; }
     }
 
     /* Mobile: rosto na parte superior da imagem */
-    .hero-image {
-        object-position: center top;
-    }
+   .hero-image{
+
+    object-fit:cover;
+
+    object-position:center top;
+
+    transform:scale(1.05);
+
+}
 
     .hero-content {
         min-height: 100svh;
@@ -1066,19 +1087,37 @@ img { display: block; max-width: 100%; }
         padding-inline: 1.25rem;
     }
 
-    .hero-info {
-        margin-left: 0;
-        width: 100%;
-        text-align: center;
-    }
+    .hero-info{
 
-    .hero-title {
-        flex-direction: column;
-        align-items: center;
-        row-gap: 0.75rem;
-        line-height: 0.84;
-        font-size: clamp(3.2rem, 14vw, 5.5rem);
-    }
+    position:relative;
+
+    top:auto;
+    right:auto;
+    left:auto;
+
+    transform:none;
+
+    width:100%;
+
+    max-width:340px;
+
+    margin:0 auto;
+
+    padding-top:55vh;
+
+    display:flex;
+    align-items:center;
+    text-align:center;
+}
+
+
+   .hero-title{
+
+    font-size:clamp(3rem,14vw,4.5rem);
+
+    line-height:.88;
+
+}
 
     .kicker {
         font-size: 0.68rem;
@@ -1209,8 +1248,10 @@ img { display: block; max-width: 100%; }
 }
 
 @media (max-width: 480px) {
-    .hero-title {
-        font-size: clamp(2.85rem, 15vw, 4rem);
+    .hero-title{
+    font-size:clamp(2.8rem,15vw,4.2rem);
+    line-height:.86;
+}
     }
 
     .tv-card {
