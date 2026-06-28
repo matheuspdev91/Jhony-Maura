@@ -198,10 +198,11 @@ img { display: block; max-width: 100%; }
 
 
 .hero-info{
+    align-items: flex-start;
     position:absolute;
 
     top:50%;
-    right:6%;
+    right:5%;
 
     left:auto;
 
@@ -237,7 +238,8 @@ img { display: block; max-width: 100%; }
 .hero-subtitle {
     margin: 1.2rem 0 2rem;
     font-size: clamp(1.35rem, 2vw, 2rem);
-    max-width:90%;
+    max-width:none;
+    width:fit-content;
     font-weight: 800;
     text-shadow: 0 0 18px rgba(255,32,32,0.7), 0 2px 16px rgba(0,0,0,0.5);
 }
@@ -255,6 +257,7 @@ img { display: block; max-width: 100%; }
 
 /* ════════════════════ BOTÕES ════════════════════ */
 .btn {
+    align-self: flex-start;
     position: relative;
     overflow: hidden;
     display: inline-flex;
@@ -1251,7 +1254,7 @@ img { display: block; max-width: 100%; }
     .hero-title{
     font-size:clamp(2.8rem,15vw,4.2rem);
     line-height:.86;
-}
+
     }
 
     .tv-card {
@@ -1262,6 +1265,7 @@ img { display: block; max-width: 100%; }
         font-size: clamp(1.1rem, 4.5vw, 1.6rem);
     }
 }
+
 
 @media (max-width: 380px) {
     .section { width: calc(100% - 1.5rem); }
@@ -1319,4 +1323,9 @@ img { display: block; max-width: 100%; }
     position:absolute;
     inset:0;
     z-index:0;
+}
+
+
+.hero-info > :not(.hero-title){
+    margin-left:.65rem;
 }
