@@ -18,7 +18,7 @@ EVENTOS
 
 .evento-hero{
 
-    background:url("assets/eventos/15-anos/folder-15anos.png");
+  /* background:url("assets/eventos/15-anos/15-anos.png");*/
 
     background-size:cover;
     background-position:center;
@@ -112,29 +112,6 @@ EVENTOS
     padding:100px 0;
 
     background:#070707;
-
-}
-
-.folder-section img{
-
-    width:100%;
-
-    max-width:1200px;
-
-    display:block;
-
-    margin:auto;
-
-    border-radius:18px;
-
-    box-shadow:0 30px 60px rgba(0,0,0,.45);
-
-}
-
-.folder-container{
-
-    width:min(1400px,95%);
-    margin:auto;
 
 }
 
