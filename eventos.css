@@ -1,0 +1,157 @@
+/* ============================
+EVENTOS
+============================ */
+
+.evento-hero{
+
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.evento-hero{
+
+    background:url("assets/eventos/15-anos/folder-15anos.png");
+
+    background-size:cover;
+    background-position:center;
+
+}
+
+.evento-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+}
+
+.evento-container{
+
+    position:relative;
+
+    z-index:5;
+
+    width:min(1100px,90%);
+
+    text-align:center;
+
+}
+
+.evento-tag{
+
+    color:#ff4ea1;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    font-weight:700;
+
+
+
+}.evento-container h1{
+
+    font-size:4rem;
+
+    margin:20px 0;
+
+}
+
+.evento-container p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    color:#d8d8d8;
+
+}
+
+.evento-btn{
+
+    display:inline-block;
+
+    margin-top:40px;
+
+    padding:18px 45px;
+
+    border-radius:999px;
+
+    text-decoration:none;
+
+    background:#ff4ea1;
+
+    color:#fff;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.evento-btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.folder-section{
+
+    padding:100px 0;
+
+    background:#070707;
+
+}
+
+.folder-section img{
+
+    width:100%;
+
+    max-width:1200px;
+
+    display:block;
+
+    margin:auto;
+
+    border-radius:18px;
+
+    box-shadow:0 30px 60px rgba(0,0,0,.45);
+
+}
+
+.folder-container{
+
+    width:min(1400px,95%);
+    margin:auto;
+
+}
+
+.evento-cta{
+
+    padding:120px 20px;
+
+    text-align:center;
+
+}
+
+
+.evento-cta h2{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
