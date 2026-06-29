@@ -1,72 +1,56 @@
 /* ==============================
-   HERO
+   Evento banner
 ============================== */
 
-.evento-banner{
-
-    position:relative;
-
-    width:100%;
-
-    overflow:hidden;
-
+.evento-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
+.evento-banner picture {
+    display: block;
+    width: 100%;
+}
 
-.evento-banner-img{
-
-    display:block;
-
-    width:100%;
-
-    height:auto;
-
+.evento-banner-img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 /* ==============================
-   BOTÃO INVISÍVEL
+   Botao invisivel
 ============================== */
 
-.evento-banner-btn{
-
-    position:absolute;
-
-    /* posição */
-    left:50%;
-    top:37.2%;
-
-    /* tamanho */
-    width:29%;
-    height:7.3%;
-
-    transform:translate(-50%, -50%);
-
-    background:transparent;
-
-    cursor:pointer;
-
-    z-index:100;
+.evento-banner-btn {
+    position: absolute;
+    left: var(--banner-btn-left);
+    top: var(--banner-btn-top);
+    width: var(--banner-btn-width);
+    height: var(--banner-btn-height);
+    transform: translate(-50%, -50%);
+    background: transparent;
+    cursor: pointer;
+    z-index: 1;
 }
 
-.evento-banner-btn{
-    position:absolute;
-    transform:translate(-50%,-50%);
-    background:transparent;
-    z-index:100;
+/* ==============================
+   15 anos
+============================== */
+
+.banner-15anos {
+    --banner-btn-left: 49%;
+    --banner-btn-top: 36%;
+    --banner-btn-width: 25%;
+    --banner-btn-height: 7.5%;
 }
 
-/* 15 anos */
-.banner-15anos{
-    left:50%;
-    top:37.2%;
-    width:29%;
-    height:7.3%;
-}
-
-/* casamento *
-.banner-casamento{
-    left:...;
-    top:...;
-    width:...;
-    height:...;
+@media (max-width: 768px) {
+    .banner-15anos {
+        --banner-btn-left: 50%;
+        --banner-btn-top: 45%;
+        --banner-btn-width: 46%;
+        --banner-btn-height: 5.5%;
+    }
 }
