@@ -227,7 +227,7 @@ img { display: block; max-width: 100%; }
 
     color:var(--red);
 
-    font-size:.72em;
+    font-size:.62em;
     font-weight:900;
 
     text-shadow:
@@ -236,7 +236,7 @@ img { display: block; max-width: 100%; }
 }
 .hero-subtitle {
     margin: 1.2rem 0 2rem;
-    font-size: clamp(1.35rem, 2vw, 2rem);
+    font-size: clamp(2.2rem, 2vw, 2rem);
     max-width:none;
     width:fit-content;
     font-weight: 800;
@@ -739,9 +739,10 @@ img { display: block; max-width: 100%; }
 }
 
 .gallery-item {
+    aspect-ratio: 3/2;
     position: relative;
     overflow: hidden;
-    min-height: 22rem;
+    min-height: auto;
     margin: 0;
     border: 1px solid rgba(255,32,32,0.20);
     border-radius: var(--radius);
@@ -749,6 +750,7 @@ img { display: block; max-width: 100%; }
     box-shadow: 0 14px 38px rgba(0,0,0,0.36);
     transition: border-color 260ms ease, transform 260ms cubic-bezier(0.16,1,0.3,1);
 }
+
 
 .gallery-item:hover {
     border-color: rgba(255,32,32,0.60);
