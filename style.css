@@ -191,31 +191,30 @@ img { display: block; max-width: 100%; }
 .hero-title{
     display:block;
     margin:0;
-    text-align:left;
-    line-height:.88;
-    font-size:clamp(5rem,8vw,8rem);
+    text-align:center;
+    line-height:.98;
+    font-size:50px;
 }
 
 
 .hero-info{
-    align-items: flex-start;
     position:absolute;
 
-    top:50%;
-    right:5%;
+    top: 55%;
+    left:50%;
 
-    left:auto;
+    transform:translate(-50%, -25%);
 
-    transform:translateY(-50%);
-
-    width:min(560px,38vw);
+    width:500px;
 
     display:flex;
     flex-direction:column;
-    align-items:flex-start;
+    align-items:center;
     justify-content:center;
 
     gap:1.5rem;
+
+    text-align:center;
 }
 
 
@@ -257,7 +256,7 @@ img { display: block; max-width: 100%; }
 
 /* ════════════════════ BOTÕES ════════════════════ */
 .btn {
-    align-self: flex-start;
+    align-self: center;
     position: relative;
     overflow: hidden;
     display: inline-flex;
@@ -1009,7 +1008,7 @@ img { display: block; max-width: 100%; }
 }
 
     .hero-content {
-        min-height: 100svh;
+        max-width: 560px;
         justify-content: center;
         padding-inline: 1.25rem;
     }
@@ -1040,9 +1039,9 @@ img { display: block; max-width: 100%; }
 
    .hero-title{
 
-    font-size:clamp(3rem,14vw,4.5rem);
+    font-size:clamp(3.8rem, 7vw, 6rem);
 
-    line-height:.88;
+    line-height:.92;
 
 }
 
