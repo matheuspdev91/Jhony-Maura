@@ -1177,8 +1177,8 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 480px) {
     .hero-title{
-    font-size:clamp(2.8rem,15vw,4.2rem);
-    line-height:.86;
+    font-size:clamp(3.4rem);
+    line-height:.9;
 
     }
 
