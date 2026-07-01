@@ -1003,9 +1003,9 @@ img { display: block; max-width: 100%; }
 
     object-fit:cover;
 
-    object-position:center 50% 10%;
+    object-position:center top;
 
-    transform:scale(1.05);
+    transform: none;
 
 }
 
@@ -1025,13 +1025,13 @@ img { display: block; max-width: 100%; }
 
     transform:none;
 
-    width:100%;
+    width:90%;
 
     max-width:340px;
 
     margin:0 auto;
 
-    padding-top:55vh;
+    padding-top:0;
 
     display:flex;
     align-items:center;
