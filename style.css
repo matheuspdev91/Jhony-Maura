@@ -1180,9 +1180,17 @@ img { display: block; max-width: 100%; }
 }
 
 @media (max-width: 400px) {
+    .hero-image{
+        object-position: 48% top;
+    }
+
+    .hero-info{
+        margin: 250px auto 0;
+    }
+
     .hero-title{
-    font-size:clamp(3.8rem, 7vw, 6rem);
-    line-height:.9;
+        font-size: 3.05rem;
+        line-height: .88;
 
     }
 
