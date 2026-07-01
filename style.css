@@ -1029,7 +1029,7 @@ img { display: block; max-width: 100%; }
 
     max-width:340px;
 
-    margin:0 auto;
+    margin: 220px auto;
 
     padding-top:0;
 
@@ -1041,9 +1041,9 @@ img { display: block; max-width: 100%; }
 
    .hero-title{
 
-    font-size:clamp(3.8rem, 7vw, 6rem);
+    font-size: 2.8rem;
 
-    line-height:.92;
+    line-height: .9;
 
 }
 
@@ -1054,7 +1054,7 @@ img { display: block; max-width: 100%; }
 
     .hero-subtitle {
         margin: 1rem 0 1.75rem;
-        font-size: clamp(1.1rem, 4vw, 1.6rem);
+        font-size: 1rem;
     }
 
     .btn {
@@ -1125,7 +1125,11 @@ img { display: block; max-width: 100%; }
 
     .tv-card {
         min-height: 9rem;
-        padding: 1.1rem;
+        padding: 0.9rem;
+    }
+
+    .tv-card strong {
+        font-size: clamp(1.1rem, 4.5vw, 1.6rem);
     }
 
     /* Gallery */
@@ -1175,9 +1179,9 @@ img { display: block; max-width: 100%; }
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
     .hero-title{
-    font-size:clamp(3.4rem);
+    font-size:clamp(3.8rem, 7vw, 6rem);
     line-height:.9;
 
     }
